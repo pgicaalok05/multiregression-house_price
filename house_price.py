@@ -35,7 +35,8 @@ def predict():
     return render_template('index2.html', prediction_text='Regression Model  has predicted House Price for given features is : {}'.format(prediction))
 
 
-house_price.run()
+if __name__ == "__main__":
+  house_price.run(debug = True)
 
 
 
